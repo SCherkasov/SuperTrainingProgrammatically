@@ -1,0 +1,6 @@
+framework module Pods_SuperTrainingProgrammatically {
+  umbrella header "Pods-SuperTrainingProgrammatically-umbrella.h"
+
+  export *
+  module * { export * }
+}

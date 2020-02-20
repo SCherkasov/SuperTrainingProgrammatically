@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>657195200010-2v4k25tkkavnjpkupihgc44qi44tp09b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.657195200010-2v4k25tkkavnjpkupihgc44qi44tp09b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD-C2WxNngkGw85je4rHfXIdJndMXtsGz8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>657195200010</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>home.SuperTrainingProgrammatically</string>
+	<key>PROJECT_ID</key>
+	<string>supertrainingprogrammatically</string>
+	<key>STORAGE_BUCKET</key>
+	<string>supertrainingprogrammatically.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:657195200010:ios:a1e4dd2060b96e3cf2f9f3</string>
+	<key>DATABASE_URL</key>
+	<string>https://supertrainingprogrammatically.firebaseio.com</string>
+</dict>
+</plist>
