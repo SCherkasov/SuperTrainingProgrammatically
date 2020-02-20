@@ -234,9 +234,13 @@ class LoginController: UIViewController {
         }, completion: nil)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-          let vc = FlagsController()
+          
+          let layout = UICollectionViewFlowLayout()
+          let vc = FlagsController(collectionViewLayout: layout)
+     
           let navVC = UINavigationController(rootViewController: vc)
           self.present(navVC, animated: true, completion: nil)
+         
         }
       }
     }
