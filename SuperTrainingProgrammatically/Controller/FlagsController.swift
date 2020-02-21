@@ -77,6 +77,26 @@ class FlagsController: UICollectionViewController {
     return cell
   }
   
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    
+    let layout = UICollectionViewFlowLayout()
+    let vc = CoinsController(collectionViewLayout: layout)
+    
+            let countryPost = self.coinStore.countries[indexPath.row] as Country
+            vc.selectedCountry = countryPost
+    
+    let navVC = UINavigationController(rootViewController: vc)
+    self.present(navVC, animated: true, completion: nil)
+//      let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+//      if let coinsVC = storyboard.instantiateViewController(withIdentifier: "CoinsViewController")
+//        as? CoinsViewController
+//      {
+//        let countryPost = self.coinStore.countries[indexPath.row] as Country
+//        coinsVC.selectedCountry = countryPost
+//        self.navigationController?.pushViewController(coinsVC, animated: true)
+//      }
+    }
+  
 }
 
 extension FlagsController {

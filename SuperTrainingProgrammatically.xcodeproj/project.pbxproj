@@ -23,6 +23,8 @@
 		8AF2498E23FF2B1A00636A2B /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF2498D23FF2B1A00636A2B /* Header.swift */; };
 		8AF2499123FF2BAD00636A2B /* FlagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF2499023FF2BAD00636A2B /* FlagCell.swift */; };
 		8AF2499323FF332400636A2B /* BaseOfCoinCountry.json in Resources */ = {isa = PBXBuildFile; fileRef = 8AF2499223FF332400636A2B /* BaseOfCoinCountry.json */; };
+		8AF45159240061B400ADFC5C /* CoinsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF45158240061B400ADFC5C /* CoinsController.swift */; };
+		8AF4515B2400626400ADFC5C /* CoinCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4515A2400626400ADFC5C /* CoinCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		8AF2498D23FF2B1A00636A2B /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		8AF2499023FF2BAD00636A2B /* FlagCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagCell.swift; sourceTree = "<group>"; };
 		8AF2499223FF332400636A2B /* BaseOfCoinCountry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BaseOfCoinCountry.json; sourceTree = "<group>"; };
+		8AF45158240061B400ADFC5C /* CoinsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsController.swift; sourceTree = "<group>"; };
+		8AF4515A2400626400ADFC5C /* CoinCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinCell.swift; sourceTree = "<group>"; };
 		B2701E9548CAF007643F79B3 /* Pods-SuperTrainingProgrammatically.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperTrainingProgrammatically.debug.xcconfig"; path = "Target Support Files/Pods-SuperTrainingProgrammatically/Pods-SuperTrainingProgrammatically.debug.xcconfig"; sourceTree = "<group>"; };
 		C790CF10BEB092675C6077CC /* Pods_SuperTrainingProgrammatically.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperTrainingProgrammatically.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,6 +120,7 @@
 			children = (
 				8AF2498F23FF2B4300636A2B /* Authorization */,
 				8AF2498123FF264000636A2B /* FlagsController.swift */,
+				8AF45158240061B400ADFC5C /* CoinsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				8AF2497F23FF25E000636A2B /* Alert.swift */,
 				8AF2498D23FF2B1A00636A2B /* Header.swift */,
 				8AF2499023FF2BAD00636A2B /* FlagCell.swift */,
+				8AF4515A2400626400ADFC5C /* CoinCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF45159240061B400ADFC5C /* CoinsController.swift in Sources */,
 				8AF2498E23FF2B1A00636A2B /* Header.swift in Sources */,
 				8AF2498B23FF2AAA00636A2B /* Coin.swift in Sources */,
 				8AF2498923FF2A9F00636A2B /* CoinStore.swift in Sources */,
@@ -276,6 +283,7 @@
 				8AF2497923FF250D00636A2B /* LaunchViewController.swift in Sources */,
 				8AF2497D23FF257800636A2B /* SignInController.swift in Sources */,
 				8AF2498223FF264000636A2B /* FlagsController.swift in Sources */,
+				8AF4515B2400626400ADFC5C /* CoinCell.swift in Sources */,
 				8AF2496523FF1CF200636A2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
