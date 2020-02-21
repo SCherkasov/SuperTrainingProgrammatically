@@ -14,6 +14,7 @@ private let cellIdetifier = "CellIdentifier"
 class FlagsController: UICollectionViewController {
   
   var coinStore = CoinStore()
+  let blackView = UIView()
   
   lazy var conteinerView: UIView = {
     let topView = UIView()
@@ -24,7 +25,8 @@ class FlagsController: UICollectionViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    createBlackView()
+    animationAppear()
     self.coinStore.loadCoins()
     
     collectionView.backgroundColor = .black
@@ -39,6 +41,22 @@ class FlagsController: UICollectionViewController {
     collectionView.contentInsetAdjustmentBehavior = .never
     
     self.navigationController?.navigationBar.isHidden = true
+  }
+  
+  func createBlackView() {
+    blackView.backgroundColor = .black
+    blackView.alpha = 1
+    blackView.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+    view.addSubview(blackView)
+  }
+  
+  func animationAppear() {
+    UIView.animate(withDuration: 3.0,
+                   delay: 1.5,
+                   options: [],
+                   animations: {
+                    self.blackView.alpha = 0
+    }, completion: nil)
   }
   
   override func numberOfSections(in collectionView: UICollectionView) -> Int {
