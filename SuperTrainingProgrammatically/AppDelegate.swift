@@ -17,9 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     
     window = UIWindow(frame: UIScreen.main.bounds)
-    let vc = LaunchViewController()
-    let navCon = UINavigationController(rootViewController: vc)
-    window?.rootViewController = navCon
+//    let vc = LaunchViewController()
+//    let navCon = UINavigationController(rootViewController: vc)
+//    window?.rootViewController = navCon
+    let layer = UICollectionViewFlowLayout()
+    let vc = FlagsController(collectionViewLayout: layer)
+    window?.rootViewController = vc
     window?.makeKeyAndVisible()
     
     FirebaseApp.configure()

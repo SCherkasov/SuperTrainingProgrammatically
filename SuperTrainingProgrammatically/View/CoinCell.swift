@@ -23,6 +23,11 @@ class CoinCell: UICollectionViewCell {
   
   let coinImage: UIImageView = {
     let image = UIImageView()
+    image.layer.cornerRadius = image.layer.frame.width / 2
+    image.clipsToBounds = true
+    image.layer.backgroundColor = UIColor.black.cgColor
+    
+    image.contentMode = ContentMode.scaleAspectFit
     
     return image
   }()
@@ -43,13 +48,13 @@ class CoinCell: UICollectionViewCell {
     super.init(frame: frame)
     
     addSubview(coinView)
-    coinView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 99, height: 115)
+    coinView.anchor(top: topAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 100, height: 100)
     
     coinView.addSubview(coinImage)
-    coinImage.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, width: 99, height: 99)
+    coinImage.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingRight: 0, width: 100, height: 100)
     
-    coinView.addSubview(coinImageName)
-    coinImageName.anchor(top: coinImage.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 99, height: 16)
+    addSubview(coinImageName)
+    coinImageName.anchor(top: coinImage.bottomAnchor, left: leftAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 100, height: 10)
     
   }
   
